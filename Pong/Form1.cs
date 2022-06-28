@@ -48,6 +48,10 @@ namespace Pong
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
+            // Initial ball position
+            pongBall.Left = horizontalMidpoint;
+            pongBall.Top = verticalMidpoint;
+
             // Get the ball moving!
             pongBall.Top -= ballYCoordinate;
             pongBall.Left -= ballXCoordinate;
@@ -109,19 +113,19 @@ namespace Pong
         {
             gameTimer.Stop();
             this.Hide();
-            Form main = new MainMenu();
-            main.Show();
+            Form gameOverScreen = new GameOverScreen();
+            gameOverScreen.Show();
         }
 
         private void Pong_KeyUp(object sender, KeyEventArgs e)
         {
-            // If up arrow key is pressed, player moves up.
+            // If up arrow key is released, player stops moving up.
             if (e.KeyCode == Keys.Up)
             {
                 playerUp = false;
             }
 
-            // If down arrow key is pressed, player moves down.
+            // If down arrow key is released, player stops moving down.
             if (e.KeyCode == Keys.Down)
             {
                 playerDown = false;
@@ -140,16 +144,6 @@ namespace Pong
             if (e.KeyCode == Keys.Down)
             {
                 playerDown = true;
-            }
-
-            // When character presses C, the character selection screen is launched.
-            if (e.KeyCode == Keys.C)
-            {
-                gameTimer.Stop();
-                Form character = new CharacterMenu();
-                character.Owner = this;
-                this.Hide();
-                character.Show();
             }
 
             // If ESC key is pressed, the game pauses.
