@@ -14,7 +14,7 @@ namespace Pong
     {
 
         // Speed Variables
-        int aiSpeed = 10;
+        int aiSpeed = 30;
         int ballHorizontalSpeed = 5;
         int ballVerticalSpeed = 5;
         int playerSpeed = 10;
@@ -78,8 +78,8 @@ namespace Pong
 
             /* ----------------------- CPU PLAYER MOVEMENTS --------------------------- */
 
-            //aI.Top += aiSpeed;
-            aI.Top = pongBall.Top - 70;
+            aI.Top += aiSpeed;
+            //aI.Top = pongBall.Top - 70;
 
             if (aI.Top < 0 || aI.Top > bottomBoundary)
             {
@@ -91,13 +91,20 @@ namespace Pong
             {
                 ballHorizontalSpeed = -ballHorizontalSpeed;
                 ballHorizontalSpeed--;
-                playerSpeed++;
+                
+                if (ballHorizontalSpeed > -12 && ballVerticalSpeed >- 12)
+                {
+                    ballHorizontalSpeed--;
+                }
             }
 
             if (pongBall.Bounds.IntersectsWith(aI.Bounds))
             {
                 ballHorizontalSpeed = -ballHorizontalSpeed;
-                ballHorizontalSpeed++;
+                if (ballHorizontalSpeed < 12 && ballVerticalSpeed < 12)
+                {
+                    ballHorizontalSpeed++;
+                }
             }
 
             /* --------------------- SCORE KEEPING -------------------------- */

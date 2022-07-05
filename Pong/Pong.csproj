@@ -124,10 +124,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pong.ico" />
-    <None Include="Resources\startBtn.png" />
-    <None Include="Resources\startBtnHover.png" />
+    <None Include="Resources\playAgainBtn.png" />
+    <None Include="Resources\playAgainHoverBtn.png" />
+    <None Include="Resources\mainMenuHoverBtn.png" />
+    <None Include="Resources\mainMenuBtn.png" />
     <None Include="Resources\exitBtn.png" />
     <None Include="Resources\exitBtnHover.png" />
+    <None Include="Resources\pongLogo.png" />
+    <None Include="Resources\startBtn.png" />
+    <None Include="Resources\startBtnHover.png" />
     <None Include="Resources\startBtnClicked.png" />
     <None Include="Resources\highscoresBtn.png" />
     <None Include="Resources\highscoresBtnHover.png" />

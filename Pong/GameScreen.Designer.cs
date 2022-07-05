@@ -33,12 +33,12 @@ namespace Pong
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameScreen));
             this.playerScoreDisplay = new System.Windows.Forms.Label();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
+            this.pongBall = new System.Windows.Forms.PictureBox();
             this.aI = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
-            this.pongBall = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pongBall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pongBall)).BeginInit();
             this.SuspendLayout();
             // 
             // playerScoreDisplay
@@ -55,27 +55,8 @@ namespace Pong
             // 
             // GameTimer
             // 
-            this.GameTimer.Enabled = true;
             this.GameTimer.Interval = 5;
             this.GameTimer.Tick += new System.EventHandler(this.GameTimer_Tick);
-            // 
-            // aI
-            // 
-            this.aI.BackColor = System.Drawing.Color.Cyan;
-            this.aI.Location = new System.Drawing.Point(1525, 375);
-            this.aI.Name = "aI";
-            this.aI.Size = new System.Drawing.Size(25, 170);
-            this.aI.TabIndex = 1;
-            this.aI.TabStop = false;
-            // 
-            // player
-            // 
-            this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.player.Location = new System.Drawing.Point(25, 375);
-            this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(25, 150);
-            this.player.TabIndex = 0;
-            this.player.TabStop = false;
             // 
             // pongBall
             // 
@@ -88,6 +69,24 @@ namespace Pong
             this.pongBall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pongBall.TabIndex = 4;
             this.pongBall.TabStop = false;
+            // 
+            // aI
+            // 
+            this.aI.BackColor = System.Drawing.Color.Cyan;
+            this.aI.Location = new System.Drawing.Point(1560, 375);
+            this.aI.Name = "aI";
+            this.aI.Size = new System.Drawing.Size(10, 170);
+            this.aI.TabIndex = 1;
+            this.aI.TabStop = false;
+            // 
+            // player
+            // 
+            this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.player.Location = new System.Drawing.Point(10, 375);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(10, 150);
+            this.player.TabIndex = 0;
+            this.player.TabStop = false;
             // 
             // GameScreen
             // 
@@ -109,9 +108,9 @@ namespace Pong
             this.Text = "Pong";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pong_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Pong_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pongBall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pongBall)).EndInit();
             this.ResumeLayout(false);
 
         }

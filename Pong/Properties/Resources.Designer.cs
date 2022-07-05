@@ -133,6 +133,46 @@ namespace Pong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mainMenuBtn {
+            get {
+                object obj = ResourceManager.GetObject("mainMenuBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mainMenuHoverBtn {
+            get {
+                object obj = ResourceManager.GetObject("mainMenuHoverBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap playAgainBtn {
+            get {
+                object obj = ResourceManager.GetObject("playAgainBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap playAgainHoverBtn {
+            get {
+                object obj = ResourceManager.GetObject("playAgainHoverBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pleading {
             get {
                 object obj = ResourceManager.GetObject("pleading", resourceCulture);
@@ -146,6 +186,16 @@ namespace Pong.Properties {
         internal static System.Drawing.Bitmap pong {
             get {
                 object obj = ResourceManager.GetObject("pong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pongLogo {
+            get {
+                object obj = ResourceManager.GetObject("pongLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

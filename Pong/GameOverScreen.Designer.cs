@@ -30,9 +30,9 @@
         {
             this.gameOverText = new System.Windows.Forms.Label();
             this.scoreDisplay = new System.Windows.Forms.Label();
-            this.retryBtn = new System.Windows.Forms.Button();
-            this.mainMenuBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
+            this.mainMenuBtn = new System.Windows.Forms.Button();
+            this.retryBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gameOverText
@@ -59,50 +59,47 @@
             this.scoreDisplay.Text = "Your score: 0";
             this.scoreDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // retryBtn
+            // exitBtn
             // 
-            this.retryBtn.BackColor = System.Drawing.Color.Transparent;
-            this.retryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.retryBtn.Font = new System.Drawing.Font("Segoe Print", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.retryBtn.ForeColor = System.Drawing.Color.Black;
-            this.retryBtn.Image = global::Pong.Properties.Resources.button;
-            this.retryBtn.Location = new System.Drawing.Point(625, 425);
-            this.retryBtn.Name = "retryBtn";
-            this.retryBtn.Size = new System.Drawing.Size(350, 100);
-            this.retryBtn.TabIndex = 2;
-            this.retryBtn.Text = "Play Again";
-            this.retryBtn.UseVisualStyleBackColor = false;
-            this.retryBtn.Click += new System.EventHandler(this.retryBtn_Click);
+            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.exitBtn.BackgroundImage = global::Pong.Properties.Resources.exitBtn;
+            this.exitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exitBtn.Font = new System.Drawing.Font("Segoe Print", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.ForeColor = System.Drawing.Color.Black;
+            this.exitBtn.Location = new System.Drawing.Point(575, 700);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(450, 125);
+            this.exitBtn.TabIndex = 4;
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // mainMenuBtn
             // 
             this.mainMenuBtn.BackColor = System.Drawing.Color.Transparent;
+            this.mainMenuBtn.BackgroundImage = global::Pong.Properties.Resources.mainMenuBtn;
             this.mainMenuBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainMenuBtn.Font = new System.Drawing.Font("Segoe Print", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainMenuBtn.ForeColor = System.Drawing.Color.Black;
-            this.mainMenuBtn.Image = global::Pong.Properties.Resources.button;
-            this.mainMenuBtn.Location = new System.Drawing.Point(625, 557);
+            this.mainMenuBtn.Location = new System.Drawing.Point(575, 550);
             this.mainMenuBtn.Name = "mainMenuBtn";
-            this.mainMenuBtn.Size = new System.Drawing.Size(350, 100);
+            this.mainMenuBtn.Size = new System.Drawing.Size(450, 125);
             this.mainMenuBtn.TabIndex = 3;
-            this.mainMenuBtn.Text = "Main Menu";
             this.mainMenuBtn.UseVisualStyleBackColor = false;
             this.mainMenuBtn.Click += new System.EventHandler(this.mainMenuBtn_Click);
             // 
-            // exitBtn
+            // retryBtn
             // 
-            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.exitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exitBtn.Font = new System.Drawing.Font("Segoe Print", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitBtn.ForeColor = System.Drawing.Color.Black;
-            this.exitBtn.Image = global::Pong.Properties.Resources.button;
-            this.exitBtn.Location = new System.Drawing.Point(625, 685);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(350, 100);
-            this.exitBtn.TabIndex = 4;
-            this.exitBtn.Text = "Exit";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            this.retryBtn.BackColor = System.Drawing.Color.Transparent;
+            this.retryBtn.BackgroundImage = global::Pong.Properties.Resources.playAgainBtn;
+            this.retryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.retryBtn.Font = new System.Drawing.Font("Segoe Print", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.retryBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.retryBtn.Location = new System.Drawing.Point(575, 400);
+            this.retryBtn.Name = "retryBtn";
+            this.retryBtn.Size = new System.Drawing.Size(450, 125);
+            this.retryBtn.TabIndex = 2;
+            this.retryBtn.UseVisualStyleBackColor = false;
+            this.retryBtn.Click += new System.EventHandler(this.retryBtn_Click);
             // 
             // GamOverScreen
             // 

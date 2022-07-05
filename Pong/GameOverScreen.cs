@@ -26,6 +26,7 @@ namespace Pong
         {
             this.Hide();
             Form newGame = new GameScreen();
+            (this.Owner as GameScreen).GameTimer.Start();
             newGame.Show();
         }
 
